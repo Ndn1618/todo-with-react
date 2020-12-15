@@ -3,6 +3,7 @@ import './App.css'
 
 function App () {
 
+	const [todos, setTodos] = useState([])
 
 	const createTodo = e => {
 
@@ -57,6 +58,7 @@ function App () {
 					})
 				}
 			</ul>
+
 		</>
 	)
 }
