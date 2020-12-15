@@ -30,8 +30,12 @@ function App () {
 
 	return (
 		<>
-			<input type="text" onKeyUp={createTodo}/>
-			<ul>
+			<form class="p-2 js-task-form" action="https://echo.htmlacademy.ru" method="POST" onSubmit={e => {e.preventDefault();}}>
+    	<input class="form-control border-0 rounded-0 shadow-none js-task-input" type="text"
+    	placeholder="What needs to be done?" aria-label="Write your task" name="task" autocomplete="off" onKeyUp={createTodo}>
+    	</input>
+    	</form>
+			<ul className="list-group js-tasks-list">
 				{
 					todos.map(todo => {
 						return (
