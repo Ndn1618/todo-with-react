@@ -22,6 +22,7 @@ body {
 
 .completed-todo .task-content {
   text-decoration: line-through;
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {
