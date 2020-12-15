@@ -6,6 +6,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.completed-todo {
+.task-heading {
+  font-size: 55px;
+  opacity: 0.5;
+}
+
+.remove-button {
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.task-list-item:hover .remove-button {
+  opacity: 1;
+}
+
+.completed-todo .task-content {
   text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+  .todos-wrapper {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
