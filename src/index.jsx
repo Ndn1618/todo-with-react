@@ -5,19 +5,19 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
 	<React.StrictMode>
-	<h1 className="sr-only">Write your ToDos</h1>
+	<h1 className="sr-only">Ckeck attendance of students</h1>
 
 	<section className="py-5">
-	<div className="container">
-	<h2 className="task-heading h1 text-center text-danger">todos</h2>
-	<div className="todos-wrapper border rounded overflow-hidden shadow">
+		<div className="container">
+			<h2 className="attendance-heading h1 text-center text-danger">Attendance list</h2>
+			<div className="attendance-wrapper border rounded overflow-hidden shadow">
 
-	<main>
-		<App />
-	</main>
+				<main>
+					<App />
+				</main>
 
-	</div>
-	</div>
+			</div>
+		</div>
 	</section>
 	</React.StrictMode>,
 	document.getElementById('root')
